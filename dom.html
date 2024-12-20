@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hellooo</h1>
+    <h1>hdjwk</h1>
+    <h1 class="blue">hey</h1>
+    <h1 id="yellow">pepe</h1>
+</body>
+<script>
+
+    // TAG
+
+    a=document.getElementsByTagName('h1')
+    Array.from(a).map((a)=>a.style.color="red")
+    console.log(a);
+    
+    //   CLASS
+
+    a=document.getElementsByClassName('blue')
+    console.log(a);
+    Array.from(a).map((a)=>a.style.color="blue")
+
+     // ID
+
+     a=document.getElementById("yellow").style.color="yellow"
+  
+     
+
+
+    
+</script>
+</html>

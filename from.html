@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <table>
+            <tr>
+                <th><h1>name</h1></th>
+                <th> <input type="text" placeholder="enter name"></th>
+            </tr>
+            <tr>
+                <th><h1>age</h1></th>
+                <th><input id="age" type="text" placeholder="enter age"></th>
+            </tr>
+        </table>
+        <button onclick="validation()" type="submit">SUBMIt</button>
+    </form>
+    <div id="result"></div>
+    
+</body>
+   <script>
+    a=document.querySelectorAll("h1")
+    Array.from(a).map((a)=>a.style.color="red")
+
+   validation=()=>{
+    age=age.value
+    if(age>=18){
+       result.innerText="eligible"
+       result.style.color='blue'
+    }else{
+         result.innerText="Not eligible"
+        result.style.color='red'
+    }
+   }
+
+
+   </script>
+</html>
